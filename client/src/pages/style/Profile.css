@@ -548,10 +548,10 @@ a.profile_galary span {
 }
 
 .showLess .profile_grid_left {
-  top: 55px;
+  bottom: 15px;
 }
 .showMore .profile_grid_left {
-  bottom: 15px;
+  top: 55px;
 }
 
 .gray_btn img {

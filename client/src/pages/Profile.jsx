@@ -121,7 +121,7 @@ const Profile = () => {
             <div className="profile_grid">
               <div
                 className={`${
-                  check && scorHeight >= height && leftHeight > 1000
+                  check && scorHeight >= height && leftHeight > 950
                     ? "scrollFixed showLess"
                     : check &&
                       scorHeight >= height &&
