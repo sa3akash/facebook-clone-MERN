@@ -1,0 +1,171 @@
+.dark {
+  --bg-primary: #242526;
+  --bg-secondary: #18191a;
+  --bg-third: #3a3b3c;
+  --color-primary: #e4e6eb;
+  --color-secondary: #b0b3b8;
+}
+
+.dark .blur {
+  background: rgba(1, 1, 1, 0.83);
+}
+.dark .hover1:hover {
+  background: var(--bg-third);
+}
+.dark .hover2:hover {
+  background: #444;
+}
+.dark .header_right svg {
+  fill: var(--color-primary);
+}
+.dark .all_right_item i {
+  filter: invert(90%);
+}
+.dark .mmenu_item i {
+  filter: invert(90%);
+}
+.dark .mmenu_main i {
+  filter: invert(60%);
+}
+.dark .absolute_wrap_header i {
+  filter: invert(90%);
+}
+.dark .left_link svg {
+  fill: var(--color-primary);
+}
+
+.dark .active_header {
+  background: var(--light-blue-color) !important;
+}
+.dark .active_header svg {
+  fill: var(--blue-color);
+}
+.dark .header_right .circle_icon:hover {
+  background: #888888;
+}
+.dark .singleComment_wrap {
+  background: var(--bg-third);
+}
+.dark .white_circle svg {
+  filter: invert(100%);
+}
+.dark .post_action i {
+  filter: invert(90%);
+}
+.dark .post_menu i {
+  filter: invert(90%);
+}
+.dark .post_menu img {
+  filter: invert(60%);
+}
+.dark .EmojiPickerReact {
+  background: var(--bg-primary);
+}
+.dark .EmojiPickerReact::-webkit-scrollbar {
+  display: none;
+}
+.dark .EmojiPickerReact li.epr-emoji-category > .epr-emoji-category-label {
+  background: var(--bg-secondary);
+}
+.dark .comment_input_wrap i {
+  filter: invert(100%);
+}
+.dark .search:hover {
+  background: #d4d6da3a;
+}
+.dark .reacts_popup {
+  background: var(--bg-third);
+}
+.dark .addto_your_post {
+  border: 3px solid var(--bg-third);
+}
+.dark .add_circle i {
+  filter: invert(90%);
+}
+.dark .icon_wrap i:hover {
+  filter: invert(0%);
+}
+.dark .post_box_header .small_circle:hover {
+  background: #888;
+}
+
+/* profile page */
+
+.dark .profile_circle:hover {
+  background: var(--bg-secondary);
+}
+.dark .profile_circle i {
+  filter: invert(100%);
+}
+.dark .gray_btn i {
+  filter: invert(100%);
+}
+.dark .gray_btn {
+  background: var(--bg-third);
+}
+.dark .p10_dots svg {
+  fill: var(--color-primary);
+}
+.dark .details_wrapper img {
+  filter: invert(90%);
+}
+
+.dark .box_privacy img,
+.dark .box_privacy i {
+  filter: invert(90%);
+}
+
+.dark .post_header_right:last-of-type svg {
+  fill: #fff;
+}
+/* friend page */
+
+.dark .mmenu_item span {
+  color: var(--color-primary);
+}
+.dark .active_friends {
+  background: var(--bg-third);
+}
+.dark .friends_header .small_circle i {
+  filter: invert(90%);
+}
+.dark .see_link {
+  color: var(--color-primary);
+}
+
+.dark .exit_icon {
+  filter: invert(90%);
+}
+
+.dark .open_cover_menu i,
+.dark .open_cover_update i {
+  filter: invert(100%);
+}
+
+.dark .absolute_wrap .mmenu_main i {
+  filter: invert(90%);
+}
+.dark .details_wrapper i {
+  filter: invert(90%);
+}
+
+.dark .blu_btn:hover{
+  background: rgb(87, 87, 255);
+}
+
+.dark .profile_right .gray_btn img,.dark .open_cover_menu img{
+  filter: invert(90%) !important;
+}
+
+.dark .slider i{
+  filter: invert(90%);
+}
+
+.dark .prev_action button i{
+  filter: invert(90%);
+}
+/* error */
+
+.dark .postError span {
+  color: rgb(255, 206, 206);
+}

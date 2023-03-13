@@ -1,0 +1,19 @@
+.home_page {
+  min-height: 100vh;
+  background: var(--bg-secondary);
+  gap: 10px;
+  position: relative;
+}
+
+.home_middle {
+  max-width: 700px;
+  width: 100%;
+  margin: 0px auto;
+  padding-top: 75px;
+}
+
+@media (max-width: 975px) {
+  .home_middle {
+    width: 95%;
+  }
+}

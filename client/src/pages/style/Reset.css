@@ -1,0 +1,157 @@
+.forgot {
+  background: var(--bg-secondary);
+  height: 100vh;
+  color: var(--color-primary);
+}
+.forgot_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 2rem;
+  background-color: var(--bg-primary);
+  box-shadow: 1px 8px 15px -7px var(--shadow-1);
+  margin-bottom: 50px;
+}
+.forgot_header img {
+  width: 160px;
+}
+.forgotUserWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.forgotUserWrap img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.forgotUserWrap span {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.forgot_email_wrap {
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.forgot_form {
+  position: relative;
+  background-color: var(--bg-primary);
+  box-shadow: 0px 1px 2px var(--shadow-1);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+.forgot_form_header {
+  font-weight: 600;
+  font-size: 24px;
+  border-bottom: 1px solid var(--bg-third);
+  padding-bottom: 10px;
+}
+.forgot_form_text {
+  font-size: 17px;
+  padding: 10px 0px;
+}
+
+.forgot_form form {
+  display: flex;
+  flex-direction: column;
+}
+.forgot_btn_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.forgot_btn_wrap a,
+.forgot_btn_wrap button {
+  width: 90px;
+}
+
+/* showusr css */
+
+.reset_grid {
+  display: flex;
+  color: var(--color-secondary);
+  gap: 10px;
+  padding: 10px;
+}
+.reset_left {
+  flex: 2;
+}
+.reset_grid .reset_left label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.reset_left input {
+  width: 20px;
+  height: 20px;
+}
+.reset_left .label_col {
+  display: flex;
+  flex-direction: column;
+}
+.reset_right {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.reset_right img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+.reset_right span:first-of-type {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+/* code verification */
+
+@media (max-width: 440px) {
+  .forgot_header {
+    padding: 10px;
+  }
+  .forgot_header img {
+    width: 120px;
+  }
+  .forgot_form_header {
+    font-size: 18px;
+  }
+  .forgot_form_text {
+    font-size: 14px;
+  }
+  .reset_grid {
+    flex-direction: column;
+  }
+  .reset_right {
+    align-items: center;
+  }
+  .reset_grid .reset_left label {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 850px) {
+  .forgot_form .input_error_desktop {
+    width: 200px;
+    left: -13.8rem;
+  }
+}

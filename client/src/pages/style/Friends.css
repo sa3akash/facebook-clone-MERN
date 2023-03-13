@@ -1,0 +1,142 @@
+.friends {
+  margin-top: 56px;
+  height: calc(100vh - 56px);
+  width: 100%;
+  color: var(--primary-color);
+}
+.friends_left {
+  background: var(--bg-primary);
+  box-shadow: 0 12px 12px var(--shadow-1);
+  height: 100%;
+  position: fixed;
+  max-width: 360px;
+  width: 100%;
+  padding: 10px 1rem;
+}
+
+.friends_right {
+    padding: 1rem;
+    position: absolute;
+    top: 56px;
+    left: 360px;
+    right: 0;
+    background: var(--bg-secondary);
+    min-height: calc(100vh - 56px);
+}
+
+.friends_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.friends_header h3{
+  font-size: 21px;
+  color: var(--color-primary);
+}
+.friends_items_wrap .mmenu_item{
+  cursor: pointer;
+  user-select: none;
+  gap: 10px;
+}
+.active_friends{
+  background: var(--bg-secondary);
+}
+
+.see_link{
+  color: var(--blue-color);
+  background: var(--bg-third);
+  cursor: pointer;
+  padding: 5px 0px;
+  border-radius: 5px;
+  user-select: none;
+  width: 80px;
+  text-align: center;
+}
+
+.friends_right_wrap{
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--bg-third);
+}
+.friends_right_wrap .card_wrap{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.f_card{
+  background: var(--bg-primary);
+  box-shadow: 1px 1px 1px var(--shadow-1);
+  width: 210px;
+  height: fit-content;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.f_card a{
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  user-select: none;
+  width: 100%;
+}
+.f_card a img{
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+.f_card a span{
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  color:var(--color-primary)
+}
+.f_card button{
+  max-width: 175px;
+  width: 95%;
+}
+
+
+.active_friends .rArrow{
+  display: none;
+}
+
+
+
+@media (max-width: 822px){
+  .friends_left{
+    max-width: 100px;
+    padding: 10px;
+  }
+  .friends_items_wrap .mmenu_item span{
+    display: none;
+  }
+  .friends_right{
+    left: 100px;
+  }
+  .friends_header h3{
+    font-size: 18px;
+  }
+  .friends_header .small_circle{
+   display: none;
+  }
+  
+}
+@media (max-width: 430px){
+  .friends_left{
+    max-width: 80px;
+    padding: 3px;
+  }
+  .friends_right{
+    left: 80px;
+  }
+  .f_card a img{
+    height: 140px;
+  }
+  
+}

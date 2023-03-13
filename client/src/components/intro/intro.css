@@ -1,0 +1,155 @@
+.info_profile {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: var(--color-primary);
+}
+.info_profile img {
+  filter: invert(40%);
+}
+.bio_text {
+  word-break: break-word;
+}
+.info_col {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.info_col button {
+  width: 100%;
+}
+.w100 {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.bio_input_wrap {
+  display: flex;
+  flex-direction: column;
+}
+.bio_input_wrap select{
+ outline: none;
+ border: none;
+ background: var(--bg-secondary);
+ height: 30px;
+ margin: 10px 0;
+ padding: 0 10px;
+ border-radius: 5px;
+}
+
+.detail_input {
+  margin-top: 10px;
+  background: var(--bg-secondary);
+}
+.detail_input:focus {
+  outline-offset: 1px;
+}
+
+.remaining {
+  font-size: 12px;
+  color: var(--color-secondary);
+  align-self: flex-end;
+  margin-top: 2px;
+}
+
+.bio_actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.flex_right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.flex_right .blu_btn:hover {
+  opacity: 0.8;
+}
+.flex_left {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-secondary);
+}
+.flex_left img {
+  width: 15px;
+  filter: invert(40%);
+}
+
+.details_box{
+  max-width: 800px;
+  width: 95%;
+}
+
+
+.details_wrapper{
+  padding: 1rem;
+  margin: 10px;
+  overflow-y: auto;
+  max-height: 65vh;
+  height: 95%;
+}
+
+.details_col{
+  display: flex;
+  flex-direction: column;
+}
+
+.details_col span:first-of-type{
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.details_col span:last-of-type{
+  color: var(--color-secondary);
+  font-size: 14px;
+}
+
+
+.detail_header{
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.detail_flex{
+  position: relative;
+  margin-top: 10px;
+}
+
+
+.Detail_no_Value{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--blue-color);
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+  width: max-content;
+}
+.Detail_no_Value:hover{
+  text-decoration: underline;
+}
+
+
+.info_profile i{
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media (max-width: 360px) {
+  .details_wrapper {
+    padding: 5px;
+  }
+}

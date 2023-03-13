@@ -1,0 +1,185 @@
+.left_home {
+  position: fixed;
+  top: 58px;
+  left: 5px;
+  max-height: 100vh;
+  overflow-y: auto;
+  color: var(--color-primary);
+  padding: 15px 0px;
+  padding-bottom: 5rem;
+  user-select: none;
+  max-width: 300px;
+  width: 95%;
+}
+.left_link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.left_link img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.left_link span {
+  margin-left: 1px;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+.col {
+  margin-left: 2px;
+  transform: translateY(-2px);
+}
+.col_1 {
+  transform: translateX(-2px);
+}
+.col_2 {
+  position: relative;
+  font-size: 12px;
+  color: var(--blue-color);
+  font-weight: normal;
+  margin-left: 9px;
+  margin-top: 2px;
+}
+.col_2::before {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: -10px;
+  width: 7px;
+  height: 7px;
+  background-color: var(--blue-color);
+  border-radius: 50%;
+}
+.rotate360 {
+  transform: rotate(180deg);
+}
+.spliter {
+  height: 1.3px;
+  background: var(--divider);
+  margin: 9px 5px 0px 12px;
+}
+.left_shortcut {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 10px;
+}
+.shortcut_heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+.shortcut_edit {
+  font-size: 14px;
+  color: var(--blue-color);
+  display: none;
+  cursor: pointer;
+}
+.left_shortcut:hover .shortcut_edit {
+  display: block;
+}
+.shortcut_item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.shortcut_item img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+.shortcut_item span {
+  margin-bottom: 3px;
+  text-transform: capitalize;
+}
+.fb_copyright {
+  position: fixed;
+  bottom: 14px;
+  left: 10px;
+  font-size: 12px;
+  color: var(--color-secondary);
+  width: 15vw;
+}
+
+.fb_copyright a:hover {
+  text-decoration: underline;
+}
+
+.relative_copyright {
+  position: relative;
+  width: 90%;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1320px) {
+  .left_home {
+    max-width: 250px;
+  }
+}
+@media (max-width: 1220px) {
+  .left_home {
+    max-width: 180px;
+  }
+}
+@media (max-width: 1080px) {
+  .left_home {
+    max-width: 80px;
+  }
+  .left_home::-webkit-scrollbar {
+    display: none !important;
+  }
+  .left_link {
+    align-items: center;
+    justify-content: center;
+  }
+  .shortcut_list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .left_link .col,
+  .left_link span,
+  .shortcut_heading,
+  .fb_copyright,
+  .left_shortcut,
+  .shortcut_item span,
+  .spliter {
+    display: none;
+  }
+  .small_circle{
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .small_circle {
+    margin-right: 0px;
+  }
+  .shortcut_item {
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 880px) {
+  .left_home {
+    display: none;
+  }
+}
